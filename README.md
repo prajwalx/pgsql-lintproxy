@@ -4,7 +4,12 @@
 
 `PGSQL Lint proxy` sits between your application (or SQL client) and your PostgreSQL database. It decodes the Postgres wire protocol in real-time, parses incoming SQL using the actual Postgres source-code parser, and blocks dangerous operations (like `DELETE` or `UPDATE` without a `WHERE` clause) before they ever hit your data.
 
-
+<h2 align="center">📺 Project Demo</h2>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=ky-6rVH47NU">
+    <img src="https://img.youtube.com/vi/ky-6rVH47NU/maxresdefault.jpg" alt="PGSQL-LintProxy" width="600">
+  </a>
+</p>
 
 ## 🚀 Why it exists
 Standard SQL linters only check static code. However, in modern development:
